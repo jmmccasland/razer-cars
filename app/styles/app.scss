@@ -4,7 +4,8 @@
 $c-primary: #0074d4;
 $c-primary-light: #4cc0dd;
 $c-accent: #f4ac56;
-$c-grey:#dbdbdf;
+$c-grey:#f2f2f2;
+$c-dark-grey: #dadadc;
 $c-black: #292b2c;
 $c-white: #fefefe;
 
@@ -39,11 +40,12 @@ $m-gutter: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
 }
 
 .logo {
+  margin: 0;
   font-size: 1.2rem;
   font-weight: normal;
 }
@@ -54,5 +56,66 @@ $m-gutter: 1rem;
 
   > * + * {
     margin-left: $m-gutter;
+  }
+}
+
+
+// Card styles
+
+.card {
+  border: 0.1rem solid $c-dark-grey;
+  background: $c-white;
+
+  &__heading {
+    padding: $m-gutter;
+    background: $c-grey;
+  }
+
+  &__content {
+    padding: $m-gutter;
+  }
+}
+
+// Button Styles
+.button {
+  border: 0;
+  background: $c-accent;
+  color: white;
+  padding: ($m-gutter / 2) $m-gutter;
+  font-size: 0.9rem;
+  outline: none;
+
+  &:active {
+    position: relative;
+    top: 0.1rem;
+    left: 0.1rem;
+  }
+}
+
+
+// Table Styles
+
+.table {
+  border-spacing: 0;
+  width: 100%;
+  text-align: left;
+
+  &__head {
+    background: $c-black;
+    color: $c-white;
+
+    &__item {
+      padding: $m-gutter ($m-gutter / 2);
+    }
+  }
+
+  &__row {
+    &__item {
+      padding: $m-gutter ($m-gutter / 2);
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: $c-grey;
   }
 }
