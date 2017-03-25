@@ -67,7 +67,8 @@ $m-gutter: 1rem;
   background: $c-white;
 
   &__heading {
-    padding: $m-gutter;
+    border-bottom: 0.1rem solid $c-dark-grey;
+    padding: ($m-gutter / 2) $m-gutter;
     background: $c-grey;
   }
 
@@ -94,8 +95,8 @@ $m-gutter: 1rem;
 
 
 // Table Styles
-
 .table {
+  margin-bottom: $m-gutter;
   border-spacing: 0;
   width: 100%;
   text-align: left;
@@ -118,4 +119,26 @@ $m-gutter: 1rem;
   tr:nth-child(even) {
     background-color: $c-grey;
   }
+}
+
+
+
+// Form Styles
+.form {
+  &__control {
+    margin: 0;
+    margin-bottom: $m-gutter;
+  }
+
+  &__input {
+    width: 100%;
+    padding: ($m-gutter / 2);
+    font-size: 0.8rem;
+  }
+
+  &__action {
+    margin: 0;
+
+  }
+
 }
