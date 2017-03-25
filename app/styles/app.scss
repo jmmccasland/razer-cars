@@ -74,6 +74,11 @@ $m-gutter: 1rem;
 
   &__content {
     padding: $m-gutter;
+
+    &--right{
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }
 
