@@ -1,0 +1,58 @@
+
+
+// COLORS
+$c-primary: #0074d4;
+$c-primary-light: #4cc0dd;
+$c-accent: #f4ac56;
+$c-grey:#dbdbdf;
+$c-black: #292b2c;
+$c-white: #fefefe;
+
+// Measurements
+$m-gutter: 1rem;
+
+
+// IMPORTS
+@import 'box-sizing';
+@import 'resets';
+
+
+// LAYOUT
+.section {
+  padding: $m-gutter;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+
+// TOP NAVIGATION
+.section--nav {
+  background: $c-primary;
+  color: $c-white;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}
