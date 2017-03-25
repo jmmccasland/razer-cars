@@ -1,7 +1,7 @@
 <div class="section">
   <div class="container">
 
-    <div class="card">
+    <div class="card card--upper">
       <div class="card__heading">
         <h2>Manufacturers</h2>
       </div>
@@ -17,7 +17,9 @@
 
           {{#each model as |brand|}}
             <tr class="table__row">
-              <td class="table__row__item">{{brand.name}}</td>
+              {{#link-to 'brands.cars' brand.id}}
+                <td class="table__row__item">{{brand.name}}</td>
+              {{/link-to}}
               <td class="table__row__item">{{brand.country}}</td>
               <td class="table__row__item">0</td>
               <td class="table__row__item">See More</td>

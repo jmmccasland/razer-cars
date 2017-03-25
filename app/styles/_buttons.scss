@@ -1,0 +1,16 @@
+
+// Button Styles
+.button {
+  border: 0;
+  background: $c-accent;
+  color: white;
+  padding: ($m-gutter / 2) $m-gutter;
+  font-size: 0.9rem;
+  outline: none;
+
+  &:active {
+    position: relative;
+    top: 0.1rem;
+    left: 0.1rem;
+  }
+}

@@ -1,0 +1,26 @@
+// Table Styles
+.table {
+  margin-bottom: $m-gutter;
+  border-spacing: 0;
+  width: 100%;
+  text-align: left;
+
+  &__head {
+    background: $c-black;
+    color: $c-white;
+
+    &__item {
+      padding: $m-gutter ($m-gutter / 2);
+    }
+  }
+
+  &__row {
+    &__item {
+      padding: $m-gutter ($m-gutter / 2);
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: $c-grey;
+  }
+}

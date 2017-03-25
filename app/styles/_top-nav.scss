@@ -1,0 +1,28 @@
+// TOP NAVIGATION
+.section--nav {
+  background: $c-primary;
+  color: $c-white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}

@@ -1,0 +1,25 @@
+// Card styles
+.card {
+  border: 0.1rem solid $c-dark-grey;
+  background: $c-white;
+
+  &__heading {
+    border-bottom: 0.1rem solid $c-dark-grey;
+    padding: ($m-gutter / 2) $m-gutter;
+    background: $c-grey;
+  }
+
+  &__content {
+    padding: $m-gutter;
+
+    &--right{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  // For use on upper level cards
+  &--upper {
+    margin: $m-gutter 0 ($m-gutter * 2);
+  }
+}
