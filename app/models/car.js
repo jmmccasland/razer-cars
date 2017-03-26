@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  country: DS.attr('string'),
-
-  cars: DS.hasMany('car'),
+  hp: DS.attr('string'),
+  year: DS.attr('string'),
+  price: DS.attr('string'),
 });
