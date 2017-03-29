@@ -12,19 +12,19 @@
     </div>
 
     <div class="grid">
-      {{!-- {{#each model as |car|}} --}}
+      {{#each model.cars as |car|}}
         <div class="grid__item">
           <div class="card">
             <div class="card__heading">
-              <h3>{{???}} - {{model.name}}</h3>
+              <h3>{{car.year}} - {{car.name}}</h3>
             </div>
             <div class="card__content">
-              <p>Horsepower: xxxx</p>
-              <p>Price: $17,845</p>
+              <p>Horsepower: {{car.hp}}</p>
+              <p>Price: ${{car.price}}</p>
             </div>
           </div>
         </div>
-      {{!-- {{/each}} --}}
+      {{/each}}
 
 
     </div>

@@ -2,9 +2,9 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  hp: DS.attr('string'),
-  year: DS.attr('string'),
-  price: DS.attr('string'),
+  hp: DS.attr('number'),
+  year: DS.attr('number'),
+  price: DS.attr('number'),
 
   brand: DS.belongsTo('brand'),
 });
