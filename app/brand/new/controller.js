@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
 
       brand.save().then(() => {
         this.set('formValues', {});
-        this.transitionToRoute('brands.index');
+        this.transitionToRoute('brand.index');
       });
     },
   },

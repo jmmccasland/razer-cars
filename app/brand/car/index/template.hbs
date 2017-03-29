@@ -5,18 +5,18 @@
         <h2>{{model.name}}</h2>
       </div>
       <div class="card__content card__content--right">
-        {{#link-to 'brands.cars.new'}}
+        {{#link-to 'brand.car.new'}}
           <button class="button">Add New Car</button>
         {{/link-to}}
       </div>
     </div>
 
     <div class="grid">
-      {{#each model as |car|}}
+      {{!-- {{#each model as |car|}} --}}
         <div class="grid__item">
           <div class="card">
             <div class="card__heading">
-              <h3>2017 - Model Name</h3>
+              <h3>{{???}} - {{model.name}}</h3>
             </div>
             <div class="card__content">
               <p>Horsepower: xxxx</p>
@@ -24,7 +24,7 @@
             </div>
           </div>
         </div>
-      {{/each}}
+      {{!-- {{/each}} --}}
 
 
     </div>

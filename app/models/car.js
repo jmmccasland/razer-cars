@@ -5,4 +5,6 @@ export default DS.Model.extend({
   hp: DS.attr('string'),
   year: DS.attr('string'),
   price: DS.attr('string'),
+
+  brand: DS.belongsTo('brand'),
 });

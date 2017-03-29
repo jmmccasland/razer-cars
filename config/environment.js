@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    apiUrl: 'https://razerapi.herokuapp.com/jmmccasland/basic',
+    apiUrl: 'https://razerapi.herokuapp.com/jmmccasland/',
 
     DS: {
       host: 'https://razerapi.herokuapp.com',
@@ -50,7 +50,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    //???
   }
 
   return ENV;
