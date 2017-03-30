@@ -20,7 +20,7 @@
             <tr class="table__row">
               <td class="table__row__item">{{brand.name}}</td>
               <td class="table__row__item">{{brand.country}}</td>
-              <td class="table__row__item">0</td>
+              <td class="table__row__item">{{brand.cars.length}}</td>
               {{#link-to 'brand.car' brand.id}}
                 <td class="table__row__item">See More</td>
               {{/link-to}}

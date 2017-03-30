@@ -5,6 +5,10 @@
         <h2>{{model.name}}</h2>
       </div>
       <div class="card__content card__content--right">
+        {{#link-to 'brand.car.edit'}}
+          <button class="button">Edit</button>
+        {{/link-to}}
+
         {{#link-to 'brand.car.new'}}
           <button class="button">Add New Car</button>
         {{/link-to}}
@@ -17,10 +21,9 @@
           <div class="card">
             <div class="card__heading">
               <h3>{{car.year}} - {{car.name}}</h3>
-              <button class="button" {{action "deleteCar" car}}>Delete</button>
-              {{#link-to 'brand.car.edit'}}
-                <button class="button">Edit</button>
-              {{/link-to}}
+              <div class="buttons">
+                <button class="button" {{action "deleteCar" car}}>X</button>
+              </div>
             </div>
             <div class="card__content">
               <p>Horsepower: {{car.hp}}</p>

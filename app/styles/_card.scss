@@ -10,11 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    // &--right{
-    //   display: flex;
-    //   justify-content: flex-end;
-    // }
   }
 
   &__content {
@@ -23,6 +18,10 @@
     &--right{
       display: flex;
       justify-content: flex-end;
+
+      > * + * {
+        margin-left: $m-gutter;
+      }
     }
   }
 

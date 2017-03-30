@@ -6,7 +6,8 @@ export default Ember.Controller.extend({
       const car = this.model;
 
       car.save().then(() => {
-        this.transitionToRoute('brand.car.index');
+        this.set('formValues', {});
+        this.transitionToRoute('brand.car.index', this.model);
       });
     },
   },
