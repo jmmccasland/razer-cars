@@ -13,6 +13,7 @@
             <th class="table__head__item">Country</th>
             <th class="table__head__item">Number of Models</th>
             <th class="table__head__item"></th>
+            <th class="table__head__item"></th>
           </tr>
 
           {{#each model as |brand|}}
@@ -23,6 +24,7 @@
               {{#link-to 'brand.car' brand.id}}
                 <td class="table__row__item">See More</td>
               {{/link-to}}
+              <td><button class="button" {{ action "deleteBrand" brand}}>X</button></td>
             </tr>
           {{/each}}
 
