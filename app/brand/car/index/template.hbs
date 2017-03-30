@@ -17,6 +17,10 @@
           <div class="card">
             <div class="card__heading">
               <h3>{{car.year}} - {{car.name}}</h3>
+              <button class="button" {{action "deleteCar" car}}>Delete</button>
+              {{#link-to 'brand.car.edit'}}
+                <button class="button">Edit</button>
+              {{/link-to}}
             </div>
             <div class="card__content">
               <p>Horsepower: {{car.hp}}</p>

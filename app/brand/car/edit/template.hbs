@@ -1,1 +1,34 @@
-{{outlet}}
+<div class="section">
+  <div class="container">
+    <div class="card card--upper">
+      <div class="card__heading">
+        <h2>Edit an Existing Model for {{model.name}}</h2>
+      </div>
+
+      <div class="card__content">
+        <form class="form" {{action "updateCar" on="submit"}}>
+          <p class="form__control">
+            {{input class="form__input" type="text" placeholder="Model Name" value=formValues.name}}
+          </p>
+
+          <p class="form__control">
+            {{input class="form__input" type="text" placeholder="Horse Power" value=formValues.hp}}
+          </p>
+
+          <p class="form__control">
+            {{input class="form__input" type="number" placeholder="Year" value=formValues.year}}
+          </p>
+
+          <p class="form__control">
+            {{input class="form__input" type="number" placeholder="Price" value=formValues.price}}
+          </p>
+
+          <p class="form__action">
+            {{#link-to "brand.car.index" class="button"}}Back{{/link-to}}
+            <button class="button" type="submit">Save Model</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
